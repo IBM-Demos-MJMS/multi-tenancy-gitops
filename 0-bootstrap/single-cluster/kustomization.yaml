@@ -17,13 +17,6 @@ patches:
 - target:
     group: argoproj.io
     kind: AppProject
-  patch: |-
-    - op: add
-      path: /spec/sourceRepos/-
-      value: https://charts.cloudnativetoolkit.dev
-- target:
-    group: argoproj.io
-    kind: AppProject
     labelSelector: "gitops.tier.layer=infra"
   patch: |-
     - op: add
